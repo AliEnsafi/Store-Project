@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-fuchsia-900 text-sm text-white px-4 py-3 font-bold hover:bg-fuchsia-950 rounded-md transition-all;
+  }
+  .btn-secondery {
+    @apply text-white bg-red-700 font-medium px-4 py-2 rounded-md hover:bg-red-900 transition-all;
+  }
+}
+
+@font-face {
+  font-family: "vazir";
+  src:
+    local("vazir"),
+    url("./../public/fonts/vazir.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "vazir";
+  src:
+    local("vazir"),
+    url("./../public/fonts/number/vazir.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  height: 100vh;
+}
